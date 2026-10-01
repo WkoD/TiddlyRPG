@@ -8,6 +8,9 @@ TiddlyWiki 5 (Node.js edition) for a D&D campaign. Internal names (tags, fields,
 tiddlers) are English; what readers see follows the wiki language (`$:/language`). The language
 of the campaign content itself is up to the campaign (see `CAMPAIGN.md`).
 
+Commit messages are English by default. If `CAMPAIGN.md` sets a different language for the
+campaign, commit messages use that language - check it before committing.
+
 ## Documentation - who covers what
 
 - **CLAUDE.md** (here): development support - rules, conventions, editing and release workflow.
