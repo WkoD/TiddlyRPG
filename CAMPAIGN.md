@@ -56,11 +56,11 @@ file:**
 
 - **Factions / locations / NPCs:** tiddlers with the respective type tag. Starting points:
   `Index` and the category hub tiddlers `Person`, `Location`, `Organisation`, `Event`,
-  `Adventure`, ... (shadows from `dndwiki-core`).
+  `Campaign`, ... (shadows from `dndwiki-core`).
 - **Player level:** body of `PlayerLevel.tid`.
 - **Open plot threads:** search for the open-items snippet (`@@.tc-tiddler-frame`) in `Event`
   tiddlers.
-- **Campaign structure / story arcs:** tiddlers tagged `Adventure`.
+- **Campaign structure / story arcs:** tiddlers tagged `Campaign`.
 - **Player characters:** tiddlers tagged `Player` or the `Player` hub.
 
 *Then* make consistent proposals that build on existing tiddlers/tags (set explicit
