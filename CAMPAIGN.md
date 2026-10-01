@@ -1,68 +1,67 @@
 <!--
-CAMPAIGN.md - SKELETT-TEMPLATE (DnDWiki-Vorlage).
-Dies ist die kanonische Vorlage. In DnDWiki bleibt sie leer/generisch.
-Jede Kampagne füllt beim 1:1-Kopieren der Vorlage ihre EIGENE Kopie aus.
-Diese Datei ist kampagnen-eigen - sie wird nicht zwischen Repos verteilt und
-überschreibt anderswo nichts.
+CAMPAIGN.md - SKELETON TEMPLATE (DnDWiki template).
+This is the canonical template. In DnDWiki it stays empty/generic.
+Every campaign fills in its OWN copy when copying the template 1:1, in the language of its
+choice. This file belongs to the campaign - it is not distributed between repos and overwrites
+nothing elsewhere.
 -->
 
 # CAMPAIGN.md
 
-Kampagnenspezifischer Kontext für Claude. **Strikt pointer-basiert**: Diese Datei
-enthält nur stabile Meta-Infos und Zeiger auf die Wiki-Tiddler - **keine** aus
-Tiddlern ableitbaren Daten (Namen, XP-Zahlen, Datumswerte, Plot-Status), damit sie
-nicht veraltet. Den echten Stand immer live aus den Tiddlern lesen.
+Campaign-specific context for Claude. **Strictly pointer based**: this file contains only stable
+meta information and pointers to the wiki tiddlers - **no** data that can be derived from tiddlers
+(names, level, dates, plot status), so that it does not go stale. Always read the real state live
+from the tiddlers.
 
-## Identität
+## Identity
 
-<!-- Kampagnen-Identität: 1-2 Zeilen, z. B. Homebrew-Setting oder offizielles
-     WotC-Abenteuer. Keine weiteren narrativen Details. -->
+<!-- Campaign identity: 1-2 lines, e.g. homebrew setting or official WotC adventure, content
+     language, calendar (none, Harptos via dndwiki-forgottenrealms, own). No further narrative
+     details. -->
 
-## Tisch-Meta (steht NICHT in Tiddlern)
+## Table meta (NOT in tiddlers)
 
-- **Spieler <-> Charakter:** <!-- reale Spielernamen <-> Charaktere; leer lassen, wenn n/a -->
-- **Hausregeln:** <!-- abweichende Regeln -->
+- **Player <-> character:** <!-- real player names <-> characters; leave empty if n/a -->
+- **House rules:** <!-- deviating rules -->
 
-## Konventionen (DM-Entscheidung)
+## Conventions (DM decision)
 
-Das Format bietet mehrere optionale Mechanismen an. Für jeden legt der DM fest,
-ob/wie er ihn für diese Kampagne nutzt - Claude richtet sich danach:
+The format offers several optional mechanisms. For each, the DM decides whether/how to use it in
+this campaign - Claude follows that:
 
-- **Session-Doku:** <!-- Standardvorschlag: keine separaten Session-Log-Tiddler;
-  Sitzungen als Ergänzung an das jeweilige `Ereignis`-Tiddler anhängen (mehrere
-  In-World-Zeitpunkte, getrennt durch `---` mit Datums-Überschrift). Alternative:
-  eigene datierte Session-Tiddler. -->
-- **Offene Punkte/Plot-Fäden:** <!-- Standardvorschlag: das `OffenePunkte`-Snippet
-  inline in `Ereignis`-Tiddlern nutzen (Callout-Box, entfernen/verkleinern sobald
-  aufgelöst). Alternative: zentraler Tracker-Tiddler. -->
-- **Karten zu Orten:** <!-- Standardvorschlag: begleitender Karten-Tiddler
-  `<Ort>_Karte` (Tag `Karte`, `bild`-Feld) neben dem Haupt-Ort-Tiddler, wo eine
-  Karte sinnvoll ist. -->
-- **Spieler-Sichtbarkeit:** <!-- Standardvorschlag: `$:/state/Spieler`-Umschaltung
-  nutzen, um am Tisch zwischen DM- und Spieler-Perspektive zu wechseln (reine
-  Render-Bequemlichkeit, kein Zugriffsschutz). Alternative: nicht nutzen. -->
-- **Kampagnenspezifische Ordner/Assets:** <!-- z. B. zusätzliche Unterordner unter
-  images/ für externe Tools (VTT-Kampfkarten o. Ä.), falls genutzt. -->
-- **Erzählstil (Tempus):** <!-- Standardvorschlag: keine feste Vorgabe, DM legt
-  fest. Beispiel für eine mögliche Wahl: durchgängige Vergangenheitsform
-  (Präteritum) als Chronik-Stil, auch für andauernde Eigenschaften/Fakten -
-  impliziert dann nicht Tod/Nicht-Existenz. Übliche Ausnahmen dafür: wörtliche
-  Rede/Zitate, primäre In-World-Dokumente, TBC-Callout-Boxen, Trivia-Quiz-Blöcke. -->
+- **Session documentation:** <!-- Default proposal: no separate session log tiddlers; sessions
+  are appended to the respective `Event` tiddler (several in-world points in time, separated by
+  `---` with a date heading). Alternative: dated session tiddlers of their own. -->
+- **Open items/plot threads:** <!-- Default proposal: use the `open-items` snippet inline in
+  `Event` tiddlers (callout box, remove/shrink once resolved). Alternative: central tracker
+  tiddler. -->
+- **Maps of locations:** <!-- Default proposal: sub-tiddler `<location>/Map` (tag `Map`, field
+  `image`) for an overview map and `<location>/BattleMap` (tag `BattleMap`) for a battle map next
+  to the location tiddler, where a map makes sense. -->
+- **Player visibility:** <!-- Default proposal: use the player login on the `Player` hub
+  (`$:/state/dndwiki/player`) to switch between DM and player perspective at the table (render
+  convenience, no access protection). Alternative: do not use. -->
+- **Campaign-specific folders/assets:** <!-- e.g. additional subfolders under images/ for
+  external tools (VTT screenshots or similar), if used. -->
+- **Narrative style (tense):** <!-- Default proposal: no fixed rule, the DM decides. Example of a
+  possible choice: past tense throughout as chronicle style, also for lasting properties/facts -
+  does not imply death/non-existence then. Usual exceptions: direct speech/quotes, primary
+  in-world documents, open-items callout boxes, trivia quiz blocks. -->
 
 
-## Story-Planungs-Workflow für Claude
+## Story planning workflow for Claude
 
-**Erst den echten Tiddler-Stand über diese Pointer lesen, nie aus dem Gedächtnis
-oder aus dieser Datei planen:**
+**First read the real tiddler state through these pointers, never plan from memory or from this
+file:**
 
-- **Fraktionen / Orte / NPCs:** Tiddler mit dem jeweiligen Typ-Tag. Startpunkte:
-  `Index.tid` und die Kategorie-Hub-Tiddler `Person.tid`, `Ort.tid`,
-  `Organisation.tid`, `Ereignis.tid`, `Abenteuer.tid`, ...
-- **Aktuelles In-World-Datum:** Body von `Datum.tid`.
-- **XP-Gesamtstand:** Body von `Erfahrungspunkte.tid`.
-- **Offene Plot-Fäden:** Suche nach dem `OffenePunkte`-Snippet in `Ereignis`-Tiddlern.
-- **Kampagnenstruktur / Handlungsbögen:** `Abenteuer`-getaggte Tiddler.
-- **Spielercharaktere:** `Spieler`-getaggte Tiddler bzw. `Spieler.tid`.
+- **Factions / locations / NPCs:** tiddlers with the respective type tag. Starting points:
+  `Index` and the category hub tiddlers `Person`, `Location`, `Organisation`, `Event`,
+  `Adventure`, ... (shadows from `dndwiki-core`).
+- **Player level:** body of `PlayerLevel.tid`.
+- **Open plot threads:** search for the open-items snippet (`@@.tc-tiddler-frame`) in `Event`
+  tiddlers.
+- **Campaign structure / story arcs:** tiddlers tagged `Adventure`.
+- **Player characters:** tiddlers tagged `Player` or the `Player` hub.
 
-*Dann* konsistente Vorschläge machen, die an bestehende Tiddler/Tags anknüpfen
-(explizite `[[WikiLinks]]` setzen).
+*Then* make consistent proposals that build on existing tiddlers/tags (set explicit
+`[[WikiLinks]]`).

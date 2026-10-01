@@ -1,5 +1,5 @@
 {
-    "description": "DnDWiki – Kampagnen-Vorlage (Client-Server). Formatschicht + Plugins kommen aus TiddlyDnD-Plugins (TIDDLYWIKI_PLUGIN_PATH).",
+    "description": "DnDWiki - campaign template (client-server). Format layer and plugins come from TiddlyDnD-Plugins (TIDDLYWIKI_PLUGIN_PATH).",
     "plugins": [
         "tiddlywiki/tiddlyweb",
         "tiddlywiki/filesystem",
