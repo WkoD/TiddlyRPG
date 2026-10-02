@@ -30,8 +30,9 @@ The format offers several optional mechanisms. For each, the DM decides whether/
 this campaign - Claude follows that:
 
 - **Session documentation:** <!-- Default proposal: no separate session log tiddlers; sessions
-  are appended to the respective `Event` tiddler (several in-world points in time, separated by
-  `---` with a date heading). Alternative: dated session tiddlers of their own. -->
+  are appended to the respective `Event` tiddler: the in-world date goes into its `date` field, the
+  text into a section starting with `<<date>>`). Alternative: dated session tiddlers of their
+  own. -->
 - **Open items/plot threads:** <!-- Default proposal: use the `open-items` snippet inline in
   `Event` tiddlers (callout box, remove/shrink once resolved). Alternative: central tracker
   tiddler. -->
