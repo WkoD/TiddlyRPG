@@ -36,9 +36,10 @@ this campaign - Claude follows that:
 - **Open items/plot threads:** <!-- Default proposal: use the `open-items` snippet inline in
   `Event` tiddlers (callout box, remove/shrink once resolved). Alternative: central tracker
   tiddler. -->
-- **Maps of locations:** <!-- Default proposal: sub-tiddler `<location>/Map` (tag `Map`, field
-  `image`) for an overview map and `<location>/BattleMap` (tag `BattleMap`) for a battle map next
-  to the location tiddler, where a map makes sense. -->
+- **Maps of locations:** <!-- Default proposal: no sub-tiddlers - the map image in the field `map`
+  of the location (`images/map/`), its places of interest as `<<spot "Name">>` sections at the
+  end of its text, battle maps in the field `battlemap` (`images/battlemap/`) or as parameter of
+  a spot; everything shows in the location's tab "Map" (see `CLAUDE.md`, "Maps of a location"). -->
 - **Player visibility:** <!-- Default proposal: use the player login on the `Player` hub
   (`$:/state/dndwiki/player`) to switch between DM and player perspective at the table (render
   convenience, no access protection). Alternative: do not use. -->
@@ -58,6 +59,9 @@ file:**
 - **Factions / locations / NPCs:** tiddlers with the respective type tag. Starting points:
   `Index` and the category hub tiddlers `Person`, `Location`, `Organisation`, `Event`,
   `Campaign`, ... (shadows from `dndwiki-core`).
+- **Location hierarchy (parent/child):** the field `location` ("liegt in") or a spot in the text
+  of the parent ("Teil von"); the path of parents shows below the title. Tags express no
+  places. <!-- Name the roots of this campaign here (worlds, planes, continents). -->
 - **Player level:** body of `PlayerLevel.tid`.
 - **Open plot threads:** search for the open-items snippet (`@@.tc-tiddler-frame`) in `Event`
   tiddlers.
