@@ -21,8 +21,9 @@ from the tiddlers.
 
 ## Table meta (NOT in tiddlers)
 
-- **Player <-> character:** <!-- real player names <-> characters; leave empty if n/a -->
 - **House rules:** <!-- deviating rules -->
+
+Who plays which character is in the field `player` of the characters (see below), not here.
 
 ## Conventions (DM decision)
 
@@ -31,8 +32,8 @@ this campaign - Claude follows that:
 
 - **Session documentation:** <!-- Default proposal: no separate session log tiddlers; sessions
   are appended to the respective `Event` tiddler: the in-world date goes into its `date` field, the
-  text into a section starting with `<<date>>`). Alternative: dated session tiddlers of their
-  own. -->
+  text into a section starting with `<<date>>`, the player characters who were there are tagged
+  on it). Alternative: dated session tiddlers of their own. -->
 - **Open items/plot threads:** <!-- Default proposal: use the `open-items` snippet inline in
   `Event` tiddlers (callout box, remove/shrink once resolved). Alternative: central tracker
   tiddler. -->
@@ -40,9 +41,13 @@ this campaign - Claude follows that:
   of the location (`images/map/`), its places of interest as `<<spot "Name">>` sections at the
   end of its text, battle maps in the field `battlemap` (`images/battlemap/`) or as parameter of
   a spot; everything shows in the location's tab "Map" (see `CLAUDE.md`, "Maps of a location"). -->
-- **Player visibility:** <!-- Default proposal: use the player login on the `Player` hub
-  (`$:/state/dndwiki/player`) to switch between DM and player perspective at the table (render
-  convenience, no access protection). Alternative: do not use. -->
+- **Player visibility:** <!-- Default proposal: switch between the public view, the view of a
+  player and the view of the DM with the page control "View" at the table; what only some
+  players know is tagged `Secret` with their characters, parts of a text are locked with
+  `<<secret "Character">>` or `<$secret for="Character">…</$secret>` (render convenience, no
+  access protection). Whether the published copy offers the view of the DM:
+  `tiddlers/$__config_dndwiki_view_dm-published.tid` with `yes`, default no. Alternative: do
+  not use. -->
 - **Campaign-specific folders/assets:** <!-- e.g. additional subfolders under images/ for
   external tools (VTT screenshots or similar), if used. -->
 - **Narrative style (tense):** <!-- Default proposal: no fixed rule, the DM decides. Example of a
@@ -65,8 +70,11 @@ file:**
 - **Player level:** body of `PlayerLevel.tid`.
 - **Open plot threads:** search for the open-items snippet (`@@.tc-tiddler-frame`) in `Event`
   tiddlers.
-- **Campaign structure / story arcs:** tiddlers tagged `Campaign`.
-- **Player characters:** tiddlers tagged `Player` or the `Player` hub.
+- **Campaign structure / story arcs:** events with a player character tagged on them (the
+  characters who were there); timeline and table on the hub `Campaign`.
+- **Player characters:** tiddlers tagged `Player` (active) and tiddlers with a field `player`
+  (played before), or the `Player` hub. The field `player` names the real player.
+- **Secrets:** tiddlers tagged `Secret` (hub `Secret`, complete in the view of the DM).
 
 *Then* make consistent proposals that build on existing tiddlers/tags (set explicit
 `[[WikiLinks]]`).
