@@ -1,6 +1,6 @@
 <!--
-CAMPAIGN.md - SKELETON TEMPLATE (DnDWiki template).
-This is the canonical template. In DnDWiki it stays empty/generic.
+CAMPAIGN.md - SKELETON TEMPLATE (TiddlyRPG template).
+This is the canonical template. In TiddlyRPG it stays empty/generic.
 Every campaign fills in its OWN copy when copying the template 1:1, in the language of its
 choice. This file belongs to the campaign - it is not distributed between repos and overwrites
 nothing elsewhere.
@@ -16,7 +16,8 @@ from the tiddlers.
 ## Identity
 
 <!-- Campaign identity: 1-2 lines, e.g. homebrew setting or official WotC adventure, content
-     language, calendar (none, Harptos via dndwiki-forgottenrealms, own). No further narrative
+     language, calendar (none, Harptos via tiddlyrpg-setting-forgottenrealms from tiddlyrpg-dnd,
+     own). No further narrative
      details. -->
 
 ## Table meta (NOT in tiddlers)
@@ -46,7 +47,7 @@ this campaign - Claude follows that:
   players know is tagged `Secret` with their characters, parts of a text are locked with
   `<<secret "Character">>` or `<$secret for="Character">…</$secret>` (render convenience, no
   access protection). Whether the published copy offers the view of the DM:
-  `tiddlers/$__config_dndwiki_view_dm-published.tid` with `yes`, default no. Alternative: do
+  `tiddlers/$__config_tiddlyrpg_view_dm-published.tid` with `yes`, default no. Alternative: do
   not use. -->
 - **Campaign-specific folders/assets:** <!-- e.g. additional subfolders under images/ for
   external tools (VTT screenshots or similar), if used. -->
@@ -63,7 +64,7 @@ file:**
 
 - **Factions / locations / NPCs:** tiddlers with the respective type tag. Starting points:
   `Index` and the category hub tiddlers `Person`, `Location`, `Organisation`, `Event`,
-  `Campaign`, ... (shadows from `dndwiki-core`).
+  `Campaign`, ... (shadows from `tiddlyrpg-core`).
 - **Location hierarchy (parent/child):** the field `location` ("liegt in") or a spot in the text
   of the parent ("Teil von"); the path of parents shows below the title. Tags express no
   places. <!-- Name the roots of this campaign here (worlds, planes, continents). -->

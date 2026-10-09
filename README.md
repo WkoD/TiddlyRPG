@@ -1,14 +1,15 @@
-# DnDWiki
+# TiddlyRPG
 
-A **TiddlyWiki 5** (Node.js edition) for D&D campaigns. This repo is the **copyable campaign
+A **TiddlyWiki 5** (Node.js edition) for tabletop role-playing campaigns. This repo is the **copyable campaign
 template**: per-wiki config, data tiddler templates (`PlayerLevel`) and (empty) content in
 `tiddlers/` plus assets (`images/`, `data/`). Engine and format layer come as dependencies:
 
 - **Engine:** the official [`tiddlywiki`](https://www.npmjs.com/package/tiddlywiki) from npm,
   pinned in `package.json`.
-- **Format layer:** from [`TiddlyDnD-Plugins`](https://github.com/WkoD/TiddlyDnD-Plugins), pinned
-  to a fixed version - the plugin `dndwiki-core` (+ `staticfiles`, optionally
-  `dndwiki-forgottenrealms`).
+- **Format layer:** from [`TiddlyRPG-Plugins`](https://github.com/WkoD/TiddlyRPG-Plugins), pinned
+  to a fixed version - the plugin `tiddlyrpg-core` (+ `staticfiles`).
+- **D&D content (optional):** from [`TiddlyRPG-DnD`](https://github.com/WkoD/TiddlyRPG-DnD),
+  pinned the same way - e.g. the setting `tiddlyrpg-setting-forgottenrealms`.
 - **Graph stack:** [`flibbles/tw5-graph`](https://github.com/flibbles/tw5-graph) +
   [`tw5-vis-network`](https://github.com/flibbles/tw5-vis-network) +
   [`tw5-relink`](https://github.com/flibbles/tw5-relink), each pinned to a release tag as an npm
@@ -23,7 +24,8 @@ template**: per-wiki config, data tiddler templates (`PlayerLevel`) and (empty) 
 4. Choose the language (see "Languages" below): `tiddlers/$__language.tid` and, for anything but
    en-GB, `"languages"` in `tiddlywiki.info`.
 5. Optional: a calendar for in-world dates (see "Calendar" below), e.g. the Calendar of Harptos
-   for the Forgotten Realms: add `"dndwiki-forgottenrealms"` to `"plugins"` in `tiddlywiki.info`.
+   for the Forgotten Realms: add the package `tiddlyrpg-dnd` to `devDependencies` and
+   `"tiddlyrpg-setting-forgottenrealms"` to `"plugins"` in `tiddlywiki.info`.
 6. Fill the per-wiki config in `tiddlers/`: `$:/SiteTitle`, `$:/SiteSubtitle`,
    `$:/DefaultTiddlers`; optionally the captions of the graph views `$:/graph/*` in the campaign
    language.
@@ -59,19 +61,20 @@ To set the language, two entries:
 
 The template is set to en-GB. A language switch in the Control Panel while `npm start` is running
 also writes `tiddlers/$__language.tid` - commit it only if the switch is meant to stay. How to add
-a language: `README.md` of `TiddlyDnD-Plugins` -> "Adding a language".
+a language: `README.md` of `TiddlyRPG-Plugins` -> "Adding a language".
 
 ## Calendar
 
 Dates such as `1351-07-11` are shown as entered unless a calendar is active. A calendar adds month
 names, festivals, the era ("1351 DR") and a calculator on the `Calendar` hub.
 
-- **Forgotten Realms:** add `"dndwiki-forgottenrealms"` to `"plugins"` in `tiddlywiki.info` - it
-  brings and activates the Calendar of Harptos.
-- **Own calendar:** copy the data tiddler `$:/dndwiki/calendar/Harptos` (from
-  `dndwiki-forgottenrealms`) into the wiki under a new title, adapt months, days, festivals and
-  leap rule, and set `$:/config/dndwiki/calendar` to its title. The data model is described in
-  `README.md` of `TiddlyDnD-Plugins` -> "Calendar".
+- **Forgotten Realms:** add the package `tiddlyrpg-dnd` (repo `TiddlyRPG-DnD`) to
+  `devDependencies` and `"tiddlyrpg-setting-forgottenrealms"` to `"plugins"` in `tiddlywiki.info` -
+  it brings and activates the Calendar of Harptos.
+- **Own calendar:** copy the data tiddler `$:/tiddlyrpg/calendar/Harptos` (from
+  `tiddlyrpg-setting-forgottenrealms`) into the wiki under a new title, adapt months, days, festivals and
+  leap rule, and set `$:/config/tiddlyrpg/calendar` to its title. The data model is described in
+  `README.md` of `TiddlyRPG-Plugins` -> "Calendar".
 
 ## Editing
 
