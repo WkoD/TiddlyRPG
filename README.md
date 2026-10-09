@@ -17,8 +17,7 @@ template**: per-wiki config, data tiddler templates (`PlayerLevel`) and (empty) 
 
 ## Setting up a new campaign
 
-1. **Copy** this repo 1:1 (e.g. via "Use this template" on GitHub) and rename it to
-   `DnDWiki-<Name>`.
+1. **Copy** this repo 1:1 (e.g. via "Use this template" on GitHub).
 2. Set `name` in `package.json` to the campaign name.
 3. `npm install` (fetches the engine + pinned format layer/graph stack).
 4. Choose the language (see "Languages" below): `tiddlers/$__language.tid` and, for anything but
