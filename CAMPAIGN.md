@@ -16,9 +16,12 @@ from the tiddlers.
 ## Identity
 
 <!-- Campaign identity: 1-2 lines, e.g. homebrew setting or official WotC adventure, content
-     language, calendar (none, Harptos via tiddlyrpg-setting-forgottenrealms from tiddlyrpg-dnd,
-     own). No further narrative
-     details. -->
+     language; the ruleset (none, or tiddlyrpg-ruleset-dnd5e2014 from tiddlyrpg-dnd); the
+     campaign setting with calendar and currency (none, the Forgotten Realms via
+     tiddlyrpg-setting-forgottenrealms from tiddlyrpg-dnd, own); the rules language chosen under
+     Control Panel -> Settings -> TiddlyRPG (e.g. English terms in a German wiki) and what it
+     means for writing (a number without unit in <<unit>> counts in the "written in" language).
+     No further narrative details. -->
 
 ## Table meta (NOT in tiddlers)
 
