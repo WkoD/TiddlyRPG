@@ -72,7 +72,7 @@ The format layer knows no game system and no world; both are optional plugins:
 | Choice | Options |
 |---|---|
 | Ruleset (rules terms: units, dice, damage, abilities, terms; macros such as `<<unit "30 ft">>`, shortcuts such as `<<wis save>>`) | none, or `tiddlyrpg-ruleset-dnd5e2014` (D&D 5e, rules of 2014, terms of the SRD 5.1) |
-| Campaign setting (calendar and currency) | none, `tiddlyrpg-setting-forgottenrealms` (Calendar of Harptos, coins of Faerûn), or an own calendar and currency (see below) |
+| Campaign setting (calendar and currency) | none, `tiddlyrpg-setting-forgottenrealms` (Calendar of Harptos, coins of the Forgotten Realms), or an own calendar and currency (see below) |
 
 Both come in the package `tiddlyrpg-dnd`. With one installed, it is active; Control Panel ->
 Settings -> TiddlyRPG chooses among several or switches one off, and sets the **rules language**:
@@ -94,12 +94,12 @@ names, festivals, the era ("1351 DR") and a calculator on the `Calendar` hub.
 
 - **Forgotten Realms:** add the package `tiddlyrpg-dnd` (repo `TiddlyRPG-DnD`) to
   `devDependencies` and `"tiddlyrpg-setting-forgottenrealms"` to `"plugins"` in `tiddlywiki.info` -
-  it brings and activates the Calendar of Harptos and the coins of Faerûn.
+  it brings and activates the Calendar of Harptos and the coins of the Forgotten Realms.
 - **Own calendar:** copy the data tiddler `$:/tiddlyrpg/calendar/Harptos` (from
   `tiddlyrpg-setting-forgottenrealms`) into the wiki under a new title, adapt months, days, festivals and
   leap rule, and set `$:/config/tiddlyrpg/calendar` to its title. The data model is described in
   `README.md` of `TiddlyRPG-Plugins` -> "Calendar". An own currency works the same way
-  (`$:/tiddlyrpg/currency/Faerun`, `$:/config/tiddlyrpg/currency`; `README.md` of
+  (`$:/tiddlyrpg/currency/ForgottenRealms`, `$:/config/tiddlyrpg/currency`; `README.md` of
   `TiddlyRPG-Plugins` -> "Currency").
 
 ## Editing
