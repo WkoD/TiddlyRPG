@@ -86,7 +86,8 @@ terms with German month names are fine. Details:
 
 Without a currency (no campaign setting), `price: 50` stays a plain number and the hub "Currency"
 is not listed under `Information`; with one, a price needs its coin: `price: 50 gp`. Without a
-ruleset the hub "Ruleset" is not listed, and its macros show the text unchanged.
+ruleset the hub "Ruleset" is not listed, and its macros show the text unchanged; without campaign
+setting the hub "CampaignSetting" is not listed.
 
 ## Calendar
 
