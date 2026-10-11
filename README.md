@@ -79,7 +79,9 @@ Settings -> TiddlyRPG chooses among several or switches one off, and sets the **
 in which language rules terms are shown and written - the wiki language, one language for all,
 or per domain. A German wiki shows "WEI", "9 m" and "50 GM" by default; for the English terms of
 an English rulebook ("WIS", "30 ft", "50 gp") set it to English. The setting is stored in
-`tiddlers/` (`$:/config/tiddlyrpg/rules/...`), so it applies to every reader. Details:
+`tiddlers/` (`$:/config/tiddlyrpg/rules/...`), so it applies to every reader. Ruleset and
+campaign setting are set apart ("Ruleset options", "Campaign setting options"): English rules
+terms with German month names are fine. Details:
 `README.md` of `TiddlyRPG-Plugins` -> "Rulesets and campaign settings", "Rules language".
 
 Without a currency (no campaign setting), `price: 50` stays a plain number and the hub "Currency"
