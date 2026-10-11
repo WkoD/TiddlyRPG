@@ -2,6 +2,7 @@
   "name": "tiddlyrpg",
   "version": "2.0.0",
   "private": true,
+  "license": "CC0-1.0",
   "description": "TiddlyRPG - copyable campaign template for role-playing campaign wikis (TiddlyWiki5).",
   "scripts": {
     "start": "node scripts/tw.js . --listen",

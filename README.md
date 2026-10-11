@@ -34,8 +34,11 @@ template**: per-wiki config, data tiddler templates (`PlayerLevel`) and (empty) 
 7. Set `tiddlers/PlayerLevel.tid` (free text, e.g. `Level 1` or `0 EXP`).
 8. Fill in `CAMPAIGN.md` - campaign-specific context for Claude (identity, table meta,
    conventions); instructions in the file header.
-9. Add lore content under `tiddlers/`, images under `images/`, PDFs under `data/book/`.
-10. Push the repo to GitHub; `.github/workflows/npm-build-pages.yml` builds and deploys
+9. Choose the license of the campaign (see "License" below): replace `LICENSE`, `license` in
+   `package.json` and the section "License" of this file.
+10. Add lore content under `tiddlers/`, images under `images/` (where they come from: field
+    `source`), PDFs under `data/book/`.
+11. Push the repo to GitHub; `.github/workflows/npm-build-pages.yml` builds and deploys
     automatically to `gh-pages` (set the Pages settings once to the `gh-pages` branch).
 
 Do not exclude any folders - format layer and plugins come from the pin.
@@ -119,5 +122,23 @@ manual saving needed. Details/conventions: `CLAUDE.md` -> "Commands & CI".
 ## Publishing
 
 The copy deployed by the CI to `gh-pages` is **read-only**.
+
+## License
+
+The part between the lines `<!-- wiki -->` and `<!-- /wiki -->` also shows in the wiki, under
+ControlPanel -> License, together with `LICENSE` and the licenses of all plugins. A campaign
+replaces it with its own. If the campaign uses content of Wizards of the Coast (D&D, the
+Forgotten Realms, an official adventure), it is fan content: the
+[Fan Content Policy](https://company.wizards.com/en/legal/fancontentpolicy) wants it free for
+everyone to use without credit - e.g. CC0 for the own content - and its notice in this section:
+"[Title] is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed
+by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the
+Coast LLC."
+
+<!-- wiki -->
+The template TiddlyRPG is dedicated to the public domain under
+[CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/) (`LICENSE`). A campaign
+made from it chooses its own license.
+<!-- /wiki -->
 
 More documentation: `CLAUDE.md` (development/conventions), `CAMPAIGN.md` (campaign-specific).
