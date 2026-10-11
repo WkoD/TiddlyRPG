@@ -71,7 +71,7 @@ The format layer knows no game system and no world; both are optional plugins:
 
 | Choice | Options |
 |---|---|
-| Ruleset (rules terms: units, dice, damage, abilities, terms; macros such as `<<unit "30 ft">>`, shortcuts such as `<<wis save>>`) | none, or `tiddlyrpg-ruleset-dnd5e2014` (D&D 5e, rules of 2014, terms of the SRD 5.1) |
+| Ruleset (rules terms: units, dice, damage, abilities, terms; macros such as `<<unit "30 ft">>`) | none, or `tiddlyrpg-ruleset-dnd5e2014` (D&D 5e, rules of 2014, terms of the SRD 5.1) |
 | Campaign setting (calendar and currency) | none, `tiddlyrpg-setting-forgottenrealms` (Calendar of Harptos, coins of the Forgotten Realms), or an own calendar and currency (see below) |
 
 Both come in the package `tiddlyrpg-dnd`. With one installed, it is active; Control Panel ->
@@ -86,8 +86,7 @@ terms with German month names are fine. Details:
 
 Without a currency (no campaign setting), `price: 50` stays a plain number and the hub "Currency"
 is not listed under `Information`; with one, a price needs its coin: `price: 50 gp`. Without a
-ruleset the hub "Ruleset" is not listed, and its macros and shortcuts show nothing or the text
-unchanged.
+ruleset the hub "Ruleset" is not listed, and its macros show the text unchanged.
 
 ## Calendar
 
