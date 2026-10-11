@@ -76,8 +76,8 @@ The format layer knows no game system and no world; both are optional plugins:
 
 Both come in the package `tiddlyrpg-dnd`. With one installed, it is active; Control Panel ->
 Settings -> TiddlyRPG chooses among several or switches one off, and sets the **rules language**:
-in which language rules terms are shown and written - the wiki language, one language for all,
-or per domain. A German wiki shows "WEI", "9 m" and "50 GM" by default; for the English terms of
+in which language rules terms are shown - the wiki language, one language for all, or per
+domain; texts are read in every language. A German wiki shows "WEI", "9 m" and "50 GM" by default; for the English terms of
 an English rulebook ("WIS", "30 ft", "50 gp") set it to English. The setting is stored in
 `tiddlers/` (`$:/config/tiddlyrpg/rules/...`), so it applies to every reader. Ruleset and
 campaign setting are set apart ("Ruleset options", "Campaign setting options"): English rules

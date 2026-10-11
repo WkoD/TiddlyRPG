@@ -18,10 +18,9 @@ from the tiddlers.
 <!-- Campaign identity: 1-2 lines, e.g. homebrew setting or official WotC adventure, content
      language; the ruleset (none, or tiddlyrpg-ruleset-dnd5e2014 from tiddlyrpg-dnd); the
      campaign setting with calendar and currency (none, the Forgotten Realms via
-     tiddlyrpg-setting-forgottenrealms from tiddlyrpg-dnd, own); the rules language chosen under
-     Control Panel -> Settings -> TiddlyRPG (e.g. English terms in a German wiki) and what it
-     means for writing (a number without unit in <<unit>> counts in the "written in" language).
-     No further narrative details. -->
+     tiddlyrpg-setting-forgottenrealms from tiddlyrpg-dnd, own); the language rules terms are
+     shown in, chosen under Control Panel -> Settings -> TiddlyRPG (e.g. English terms and German
+     month names in a German wiki). No further narrative details. -->
 
 ## Table meta (NOT in tiddlers)
 
