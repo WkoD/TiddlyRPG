@@ -41,10 +41,10 @@ this campaign - Claude follows that:
   to a quest with `<<quest "Name">>` (see `CLAUDE.md`, "Quests and rumours"); a tiddler tagged
   `Quest` for the quests that need planning, the rest stay rumours. House rules to decide, e.g.
   whether a marker may stand in the middle of a paragraph or the paragraph is split instead. -->
-- **Maps of locations:** <!-- Default proposal: no sub-tiddlers - the map image in the field `map`
-  of the location (`images/map/`), its places of interest as `<<spot "Name">>` sections at the
-  end of its text, battle maps in the field `battlemap` (`images/battlemap/`) or as parameter of
-  a spot; everything shows in the location's tab "Map" (see `CLAUDE.md`, "Maps of a location"). -->
+- **Maps of locations:** <!-- Default proposal: no sub-tiddlers - the maps in the field `map`
+  of the location (`images/map/`, battle maps among them, from two on one tab each), its places
+  of interest as `<<spot "Name">>` sections at the end of its text, shown below the maps (see
+  `CLAUDE.md`, "Maps of a location"). -->
 - **Player visibility:** <!-- Default proposal: switch between the public view, the view of a
   player and the view of the DM with the page control "View" at the table; what only some
   players know is tagged `Secret` with their characters, parts of a text are locked with
