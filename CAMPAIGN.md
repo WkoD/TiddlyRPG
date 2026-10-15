@@ -37,9 +37,10 @@ this campaign - Claude follows that:
   are appended to the respective `Event` tiddler: the in-world date goes into its `date` field, the
   text into a section starting with `<<date>>`, the player characters who were there are tagged
   on it). Alternative: dated session tiddlers of their own. -->
-- **Open items/plot threads:** <!-- Default proposal: use the `open-items` snippet inline in
-  `Event` tiddlers (callout box, remove/shrink once resolved). Alternative: central tracker
-  tiddler. -->
+- **Quests and plot threads:** <!-- Default proposal: mark the paragraphs of events that belong
+  to a quest with `<<quest "Name">>` (see `CLAUDE.md`, "Quests and rumours"); a tiddler tagged
+  `Quest` for the quests that need planning, the rest stay rumours. House rules to decide, e.g.
+  whether a marker may stand in the middle of a paragraph or the paragraph is split instead. -->
 - **Maps of locations:** <!-- Default proposal: no sub-tiddlers - the map image in the field `map`
   of the location (`images/map/`), its places of interest as `<<spot "Name">>` sections at the
   end of its text, battle maps in the field `battlemap` (`images/battlemap/`) or as parameter of
@@ -56,7 +57,7 @@ this campaign - Claude follows that:
 - **Narrative style (tense):** <!-- Default proposal: no fixed rule, the DM decides. Example of a
   possible choice: past tense throughout as chronicle style, also for lasting properties/facts -
   does not imply death/non-existence then. Usual exceptions: direct speech/quotes, primary
-  in-world documents, open-items callout boxes, trivia quiz blocks. -->
+  in-world documents, trivia quiz blocks. -->
 
 
 ## Story planning workflow for Claude
@@ -71,8 +72,8 @@ file:**
   of the parent ("Teil von"); the path of parents shows below the title. Tags express no
   places. <!-- Name the roots of this campaign here (worlds, planes, continents). -->
 - **Player level:** body of `PlayerLevel.tid`.
-- **Open plot threads:** search for the open-items snippet (`@@.tc-tiddler-frame`) in `Event`
-  tiddlers.
+- **Open plot threads:** the hub `Quest` (also on `Campaign`): quests and rumours with their
+  newest marker; the page of each shows its planning and its history.
 - **Campaign structure / story arcs:** events with a player character tagged on them (the
   characters who were there); timeline and table on the hub `Campaign`.
 - **Player characters:** tiddlers tagged `Player` (active) and tiddlers with a field `player`
