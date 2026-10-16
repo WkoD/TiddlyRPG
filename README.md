@@ -70,7 +70,7 @@ a language: `README.md` of `TiddlyRPG-Plugins` -> "Adding a language".
 
 ## Ruleset, campaign setting and rules language
 
-The format layer knows no game system and no world; both are optional plugins:
+A game system and a world come as optional plugins:
 
 | Choice | Options |
 |---|---|
@@ -120,6 +120,10 @@ npm run check  # check every tiddler: errors and hints
 Changes made in the browser are written back automatically as `.tid` files in `tiddlers/` - no
 manual saving needed. While editing, errors and hints stand below the title of a tiddler (not in
 the published copy). Details/conventions: `CLAUDE.md` -> "Commands & CI", "Checks".
+
+How to use the wiki - the hubs, writing tiddlers, relations, locations, events, views and
+secrets: `README.md` of `TiddlyRPG-Plugins` -> "Using the wiki", also in the wiki itself under
+ControlPanel -> Plugins -> `tiddlyrpg-core` -> readme.
 
 ## Publishing
 
