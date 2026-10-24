@@ -1,7 +1,7 @@
 # TiddlyRPG
 
 A **TiddlyWiki 5** (Node.js edition) for tabletop role-playing campaigns. This repo is the **copyable campaign
-template**: per-wiki config, data tiddler templates (`PlayerLevel`) and (empty) content in
+template**: per-wiki config and (empty) content in
 `tiddlers/` plus assets (`images/`, `data/`). Engine and format layer come as dependencies:
 
 - **Engine:** the official [`tiddlywiki`](https://www.npmjs.com/package/tiddlywiki) from npm,
@@ -32,7 +32,8 @@ template**: per-wiki config, data tiddler templates (`PlayerLevel`) and (empty) 
 6. Fill the per-wiki config in `tiddlers/`: `$:/SiteTitle`, `$:/SiteSubtitle`,
    `$:/DefaultTiddlers`; optionally the captions of the graph views `$:/graph/*` in the campaign
    language.
-7. Set `tiddlers/PlayerLevel.tid` (free text, e.g. `Level 1` or `0 EXP`).
+7. With the D&D ruleset: give each player character its XP in the field `xp`; its level derives
+   from it and shows on its card in the hub `Player`.
 8. Fill in `CAMPAIGN.md` - campaign-specific context for Claude (identity, table meta,
    conventions); instructions in the file header.
 9. Choose the license of the campaign (see "License" below): replace `LICENSE`, `license` in
