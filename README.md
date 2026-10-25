@@ -28,7 +28,8 @@ template**: per-wiki config and (empty) content in
    `devDependencies` and `"tiddlyrpg-ruleset-dnd5e2014"` and/or
    `"tiddlyrpg-setting-forgottenrealms"` to `"plugins"` in `tiddlywiki.info`; for a wiki in
    another language than English, choose the rules language. The package also brings the items,
-   spells and creatures of the SRD 5.1 to take into the wiki one by one (in the editable wiki).
+   spells, creatures, classes, folks, traits, languages, the feat and the glossary of the SRD 5.1
+   to take into the wiki one by one (in the editable wiki).
 6. Fill the per-wiki config in `tiddlers/`: `$:/SiteTitle`, `$:/SiteSubtitle`,
    `$:/DefaultTiddlers`; optionally the captions of the graph views `$:/graph/*` in the campaign
    language.

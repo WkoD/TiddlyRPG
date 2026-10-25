@@ -71,7 +71,8 @@ file:**
 - **Location hierarchy (parent/child):** the field `location` ("liegt in") or a spot in the text
   of the parent ("Teil von"); the path of parents shows below the title. Tags express no
   places. <!-- Name the roots of this campaign here (worlds, planes, continents). -->
-- **Player level:** the field `xp` of each player character; the level derives from it.
+- **Player level:** the field `xp` of each player character; with the D&D ruleset the level
+  derives from it.
 - **Open plot threads:** the hub `Quest` (also on `Campaign`): quests and rumours with their
   newest marker; the page of each shows its planning and its history.
 - **Campaign structure / story arcs:** events with a player character tagged on them (the
