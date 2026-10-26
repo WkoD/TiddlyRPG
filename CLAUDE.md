@@ -226,7 +226,7 @@ Standard `.tid` format (field header, blank line, body). Fields of content tiddl
   `location`, `member`, `former`, `leader`, `officer`, `patron`, `mentor`, `under`, `parent`,
   `ancestor`, `spouse`, `sibling`, `family`, `alliance`, `bond`, `enmity` (person/organisation/deity),
   `creature`, `folk`, `classes`, `feats` and `languages` (person/player/creature; `languages`
-  also a folk), `owner`/`creator`/`former`/`component`/`location`/`base`
+  and `patron` also a folk), `owner`/`creator`/`former`/`component`/`location`/`base`
   (items), `spells` (items, persons, player characters, creatures, classes) and `classes` (spells:
   who casts it; items: attunement by). Meaning, edge texts and axes:
   `README.md` of `TiddlyRPG-Plugins` -> "Relations".
@@ -282,6 +282,8 @@ Standard `.tid` format (field header, blank line, body). Fields of content tiddl
     adds its own subclass or choice as a tiddler with its own words, never text of a book.
   - **`location`** on a creature or a folk: where its kind or the folk lives - several entries,
     all equal; the place lists them as "Creatures" and "Folks".
+  - **`patron`** on a folk: the deities the folk worships (`Nordvolk` -> `Hela`, `Odin`) - on the
+    folk, not on each of its people or on an organisation of it.
   - **`base`** on an item: the item it is made on (`Frostbringer` -> `Warhammer`). Choosing it in
     the editor copies the values of the rules of the base item into the empty fields, once;
     nothing stays linked, the price never comes along.
