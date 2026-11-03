@@ -28,8 +28,9 @@ template**: per-wiki config and (empty) content in
    `devDependencies` and `"tiddlyrpg-ruleset-dnd5e2014"` and/or
    `"tiddlyrpg-setting-forgottenrealms"` to `"plugins"` in `tiddlywiki.info`; for a wiki in
    another language than English, choose the rules language. The package also brings the items,
-   spells, creatures, classes, folks, traits, languages, the feat and the glossary of the SRD 5.1
-   to take into the wiki one by one (in the editable wiki).
+   spells, creatures, classes, folks, traits, languages, the feat and the glossary of the SRD 5.1:
+   what the wiki names is part of it at every start (also in the published copy), and an entry
+   is taken into the wiki only to change it.
 6. Fill the per-wiki config in `tiddlers/`: `$:/SiteTitle`, `$:/SiteSubtitle`,
    `$:/DefaultTiddlers`; optionally the captions of the graph views `$:/graph/*` in the campaign
    language.
@@ -144,7 +145,7 @@ everyone to use without credit - e.g. CC0 for the own content - and its notice i
 by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the
 Coast LLC."
 
-A campaign that takes entries of the SRD 5.1 into its wiki (the content package of
+A campaign that takes or names entries of the SRD 5.1 in its wiki (the content package of
 `TiddlyRPG-DnD`) also carries, from the first one on, the attribution of page 1 of the SRD 5.1 in
 this section, word for word: "This work includes material taken from the System Reference
 Document 5.1 (“SRD 5.1”) by Wizards of the Coast LLC and available at
