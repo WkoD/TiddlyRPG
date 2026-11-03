@@ -66,7 +66,7 @@ this campaign - Claude follows that:
 file:**
 
 - **Factions / locations / NPCs:** tiddlers with the respective type tag. Starting points:
-  `Index` and the category hub tiddlers `Person`, `Location`, `Organisation`, `Event`,
+  `Index` and the hubs `Person`, `Location`, `Organisation`, `Event`,
   `Campaign`, ... (shadows from `tiddlyrpg-core`).
 - **Location hierarchy (parent/child):** the field `location` ("liegt in") or a spot in the text
   of the parent ("Teil von"); the path of parents shows below the title. Tags express no
